@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="animated-banner.svg" alt="Shrimp Water-Quality Detection and Forecasting" width="100%">
+<img src="assets/animated-banner.svg" alt="Shrimp Water-Quality Detection and Forecasting" width="100%">
 
 <br>
 
@@ -54,12 +54,6 @@ It combines a Random Forest classification model with parameter-specific ARIMA f
 ---
 
 ## Application Preview
-
-Place a screenshot of the deployed application at:
-
-```text
-assets/preview.png
-```
 
 Then the preview will render below:
 
@@ -189,49 +183,61 @@ Mortality-Prediction-for-Penaeus-vannamei/
 <div align="center">
 
 <a href="https://www.python.org/">
-<img src="https://cdn.simpleicons.org/python/3776AB" alt="Python" width="42" height="42">
+  <img src="https://cdn.simpleicons.org/python/3776AB" alt="Python" width="48" height="48">
 </a>
-&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;
+
 <a href="https://streamlit.io/">
-<img src="https://cdn.simpleicons.org/streamlit/FF4B4B" alt="Streamlit" width="42" height="42">
+  <img src="https://cdn.simpleicons.org/streamlit/FF4B4B" alt="Streamlit" width="48" height="48">
 </a>
-&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;
+
 <a href="https://scikit-learn.org/">
-<img src="https://cdn.simpleicons.org/scikitlearn/F7931E" alt="Scikit-learn" width="42" height="42">
+  <img src="https://cdn.simpleicons.org/scikitlearn/F7931E" alt="Scikit-learn" width="48" height="48">
 </a>
-&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;
+
 <a href="https://pandas.pydata.org/">
-<img src="https://cdn.simpleicons.org/pandas/150458" alt="Pandas" width="42" height="42">
+  <img src="https://cdn.simpleicons.org/pandas/150458" alt="Pandas" width="48" height="48">
 </a>
-&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;
+
 <a href="https://numpy.org/">
-<img src="https://cdn.simpleicons.org/numpy/013243" alt="NumPy" width="42" height="42">
+  <img src="https://cdn.simpleicons.org/numpy/013243" alt="NumPy" width="48" height="48">
 </a>
-&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;
+
 <a href="https://matplotlib.org/">
-<img src="https://cdn.simpleicons.org/matplotlib/11557C" alt="Matplotlib" width="42" height="42">
+  <img src="https://cdn.simpleicons.org/matplotlib/11557C" alt="Matplotlib" width="48" height="48">
 </a>
-&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;
+
+<a href="https://www.statsmodels.org/">
+  <img src="https://cdn.simpleicons.org/statsmodels/4051B5" alt="Statsmodels" width="48" height="48">
+</a>
+&nbsp;&nbsp;&nbsp;
+
 <a href="https://jupyter.org/">
-<img src="https://cdn.simpleicons.org/jupyter/F37626" alt="Jupyter" width="42" height="42">
+  <img src="https://cdn.simpleicons.org/jupyter/F37626" alt="Jupyter" width="48" height="48">
 </a>
-&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;
+
 <a href="https://code.visualstudio.com/">
-<img src="https://cdn.simpleicons.org/visualstudiocode/007ACC" alt="Visual Studio Code" width="42" height="42">
+  <img src="https://cdn.simpleicons.org/visualstudiocode/007ACC" alt="Visual Studio Code" width="48" height="48">
 </a>
-&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;
+
 <a href="https://github.com/">
-<img src="https://cdn.simpleicons.org/github/181717" alt="GitHub" width="42" height="42">
+  <img src="https://cdn.simpleicons.org/github/FFFFFF" alt="GitHub" width="48" height="48">
 </a>
 
 <br><br>
 
 <sub>
-Python · Streamlit · Scikit-learn · Pandas · NumPy · Matplotlib · Jupyter · Visual Studio Code · GitHub
+Python · Streamlit · Scikit-learn · Pandas · NumPy · Matplotlib · Statsmodels · Jupyter · VS Code · GitHub
 </sub>
 
 </div>
-
 ---
 
 ## Local Setup
