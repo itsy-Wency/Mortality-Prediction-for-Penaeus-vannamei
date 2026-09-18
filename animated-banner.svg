@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 360" role="img" aria-label="Shrimp Water Quality Detection and Forecasting">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#071a2b"/>
+      <stop offset="55%" stop-color="#0b3150"/>
+      <stop offset="100%" stop-color="#063b4b"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#45d7ff"/>
+      <stop offset="50%" stop-color="#64f0c8"/>
+      <stop offset="100%" stop-color="#45d7ff"/>
+    </linearGradient>
+    <filter id="blur">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+    <filter id="soft">
+      <feGaussianBlur stdDeviation="5"/>
+    </filter>
+    <pattern id="grid" width="55" height="55" patternUnits="userSpaceOnUse">
+      <path d="M55 0H0V55" fill="none" stroke="#8bd8e8" stroke-opacity=".08"/>
+    </pattern>
+  </defs>
+
+  <rect width="1400" height="360" rx="28" fill="url(#bg)"/>
+  <rect x="0" y="0" width="1400" height="360" rx="28" fill="url(#grid)"/>
+
+  <!-- Ambient animated glow -->
+  <circle cx="170" cy="70" r="95" fill="#32c7ff" opacity=".12" filter="url(#blur)">
+    <animate attributeName="cx" values="170;300;170" dur="9s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="70;120;70" dur="7s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="1210" cy="290" r="120" fill="#50e3bd" opacity=".10" filter="url(#blur)">
+    <animate attributeName="cx" values="1210;1080;1210" dur="11s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Data pulse line -->
+  <path d="M0 270 C120 250 155 292 255 266 S410 250 500 270 S665 300 760 255 S930 230 1030 260 S1200 300 1400 245"
+        fill="none" stroke="url(#glow)" stroke-width="3" opacity=".35"/>
+  <path d="M0 270 C120 250 155 292 255 266 S410 250 500 270 S665 300 760 255 S930 230 1030 260 S1200 300 1400 245"
+        fill="none" stroke="url(#glow)" stroke-width="3" stroke-dasharray="14 18">
+    <animate attributeName="stroke-dashoffset" from="0" to="-64" dur="2.5s" repeatCount="indefinite"/>
+  </path>
+
+  <!-- Floating data nodes -->
+  <g fill="#64f0c8">
+    <circle cx="180" cy="240" r="4"><animate attributeName="cy" values="240;226;240" dur="3s" repeatCount="indefinite"/></circle>
+    <circle cx="430" cy="274" r="4"><animate attributeName="cy" values="274;258;274" dur="3.7s" repeatCount="indefinite"/></circle>
+    <circle cx="760" cy="255" r="4"><animate attributeName="cy" values="255;238;255" dur="2.8s" repeatCount="indefinite"/></circle>
+    <circle cx="1040" cy="260" r="4"><animate attributeName="cy" values="260;242;260" dur="3.4s" repeatCount="indefinite"/></circle>
+    <circle cx="1230" cy="275" r="4"><animate attributeName="cy" values="275;257;275" dur="3.1s" repeatCount="indefinite"/></circle>
+  </g>
+
+  <text x="700" y="118" text-anchor="middle" fill="#ffffff"
+        font-family="Inter,Segoe UI,Arial,sans-serif" font-size="48" font-weight="700">
+    Shrimp Water-Quality
+  </text>
+  <text x="700" y="173" text-anchor="middle" fill="#ffffff"
+        font-family="Inter,Segoe UI,Arial,sans-serif" font-size="48" font-weight="700">
+    Detection &amp; Forecasting
+  </text>
+  <text x="700" y="212" text-anchor="middle" fill="#9edbe7"
+        font-family="Inter,Segoe UI,Arial,sans-serif" font-size="18">
+    Random Forest risk classification  •  ARIMA forecasting  •  Streamlit
+  </text>
+
+  <rect x="555" y="232" width="290" height="42" rx="21" fill="#ffffff" fill-opacity=".07" stroke="#64f0c8" stroke-opacity=".35"/>
+  <text x="700" y="259" text-anchor="middle" fill="#dffcf6"
+        font-family="Inter,Segoe UI,Arial,sans-serif" font-size="15" font-weight="600">
+    Environmental Intelligence Prototype
+  </text>
+</svg>
