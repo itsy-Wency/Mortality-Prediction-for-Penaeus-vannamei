@@ -4,12 +4,34 @@
 
 <br>
 
+# Shrimp Water-Quality Detection and Forecasting Model
+
+### Environmental Risk Detection and Time-Series Forecasting for *Penaeus vannamei*
+
+<p>
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
+  <img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white" alt="Streamlit">
+  <img src="https://img.shields.io/badge/Scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white" alt="Scikit-learn">
+  <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas">
+  <img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white" alt="NumPy">
+</p>
+
+<p>
+  <img src="https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge&logo=matplotlib&logoColor=white" alt="Matplotlib">
+  <img src="https://img.shields.io/badge/Statsmodels-4051B5?style=for-the-badge" alt="Statsmodels">
+  <img src="https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white" alt="Jupyter">
+  <img src="https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white" alt="Visual Studio Code">
+  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
+</p>
+
+<br>
+
 <a href="https://forecasting-mortality-prediction-for-penaeus-vannamei.streamlit.app/">
-  <img src="https://img.shields.io/badge/LIVE%20APPLICATION-Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white" alt="Live application">
+  <img src="https://img.shields.io/badge/LIVE%20APPLICATION-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white" alt="Live Application">
 </a>
 &nbsp;
 <a href="https://github.com/itsy-Wency/Mortality-Prediction-for-Penaeus-vannamei">
-  <img src="https://img.shields.io/badge/SOURCE%20CODE-GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="Source code">
+  <img src="https://img.shields.io/badge/SOURCE%20CODE-181717?style=for-the-badge&logo=github&logoColor=white" alt="Source Code">
 </a>
 
 <br><br>
@@ -26,13 +48,13 @@ This project implements a **water-quality detection and short-term forecasting p
 
 It combines a Random Forest classification model with parameter-specific ARIMA forecasting models and exposes the trained models through a Streamlit web application.
 
-### Core capabilities
+### Core Capabilities
 
 | Component | Function | Result |
 |---|---|---|
 | Random Forest | Environmental risk-condition classification | Low / Moderate / High Risk |
 | ARIMA | Short-term water-quality forecasting | Future DO, pH, temperature, salinity |
-| Threshold engine | Parameter condition interpretation | Healthy / Conditional / Unhealthy |
+| Threshold Engine | Parameter condition interpretation | Healthy / Conditional / Unhealthy |
 | Streamlit | Interactive simulation interface | Browser-based model demonstration |
 
 ---
@@ -42,7 +64,7 @@ It combines a Random Forest classification model with parameter-specific ARIMA f
 <div align="center">
 
 <a href="https://forecasting-mortality-prediction-for-penaeus-vannamei.streamlit.app/">
-  <img src="https://img.shields.io/badge/Open%20the%20Live%20Application-View%20Demo-0B7285?style=for-the-badge&logo=streamlit&logoColor=white" alt="Open live application">
+  <img src="https://img.shields.io/badge/Open%20the%20Live%20Application-View%20Demo-0B7285?style=for-the-badge&logo=streamlit&logoColor=white" alt="Open Live Application">
 </a>
 
 <br><br>
@@ -54,8 +76,6 @@ It combines a Random Forest classification model with parameter-specific ARIMA f
 ---
 
 ## Application Preview
-
-Then the preview will render below:
 
 <div align="center">
 
@@ -76,7 +96,7 @@ flowchart LR
     A["Water-quality measurements"] --> B["Preprocessing"]
 
     B --> C["Random Forest"]
-    B --> D["ARIMA models"]
+    B --> D["ARIMA Models"]
 
     C --> E["Environmental risk classification"]
     E --> F["Low / Moderate / High"]
@@ -123,25 +143,25 @@ Unhealthy    = 2 points
 
 ```text
 Historical water-quality dataset
-            |
-            v
-      Data preparation
-            |
-      +-----+-----+
-      |           |
-      v           v
- Random Forest   ARIMA
-      |           |
-      v           v
- Current risk   Forecasts
-      |           |
-      +-----+-----+
-            |
-            v
-    Threshold evaluation
-            |
-            v
- Environmental interpretation
+              |
+              v
+        Data preparation
+              |
+        +-----+-----+
+        |           |
+        v           v
+ Random Forest    ARIMA
+        |           |
+        v           v
+ Current risk    Forecasts
+        |           |
+        +-----+-----+
+              |
+              v
+      Threshold evaluation
+              |
+              v
+   Environmental interpretation
 ```
 
 ---
@@ -178,68 +198,6 @@ Mortality-Prediction-for-Penaeus-vannamei/
 
 ---
 
-## Technology Stack
-
-<div align="center">
-
-<a href="https://www.python.org/">
-  <img src="https://cdn.simpleicons.org/python/3776AB" alt="Python" width="48" height="48">
-</a>
-&nbsp;&nbsp;&nbsp;
-
-<a href="https://streamlit.io/">
-  <img src="https://cdn.simpleicons.org/streamlit/FF4B4B" alt="Streamlit" width="48" height="48">
-</a>
-&nbsp;&nbsp;&nbsp;
-
-<a href="https://scikit-learn.org/">
-  <img src="https://cdn.simpleicons.org/scikitlearn/F7931E" alt="Scikit-learn" width="48" height="48">
-</a>
-&nbsp;&nbsp;&nbsp;
-
-<a href="https://pandas.pydata.org/">
-  <img src="https://cdn.simpleicons.org/pandas/150458" alt="Pandas" width="48" height="48">
-</a>
-&nbsp;&nbsp;&nbsp;
-
-<a href="https://numpy.org/">
-  <img src="https://cdn.simpleicons.org/numpy/013243" alt="NumPy" width="48" height="48">
-</a>
-&nbsp;&nbsp;&nbsp;
-
-<a href="https://matplotlib.org/">
-  <img src="https://cdn.simpleicons.org/matplotlib/11557C" alt="Matplotlib" width="48" height="48">
-</a>
-&nbsp;&nbsp;&nbsp;
-
-<a href="https://www.statsmodels.org/">
-  <img src="https://cdn.simpleicons.org/statsmodels/4051B5" alt="Statsmodels" width="48" height="48">
-</a>
-&nbsp;&nbsp;&nbsp;
-
-<a href="https://jupyter.org/">
-  <img src="https://cdn.simpleicons.org/jupyter/F37626" alt="Jupyter" width="48" height="48">
-</a>
-&nbsp;&nbsp;&nbsp;
-
-<a href="https://code.visualstudio.com/">
-  <img src="https://cdn.simpleicons.org/visualstudiocode/007ACC" alt="Visual Studio Code" width="48" height="48">
-</a>
-&nbsp;&nbsp;&nbsp;
-
-<a href="https://github.com/">
-  <img src="https://cdn.simpleicons.org/github/FFFFFF" alt="GitHub" width="48" height="48">
-</a>
-
-<br><br>
-
-<sub>
-Python · Streamlit · Scikit-learn · Pandas · NumPy · Matplotlib · Statsmodels · Jupyter · VS Code · GitHub
-</sub>
-
-</div>
----
-
 ## Local Setup
 
 ### 1. Clone the repository
@@ -264,7 +222,7 @@ python -m venv .venv
 python -m pip install -r requirements.txt
 ```
 
-For notebook/model development:
+For notebook and model development:
 
 ```powershell
 python -m pip install -r requirements_shrimp_ml.txt
@@ -336,7 +294,7 @@ outputs/water_quality_forecast_and_projected_risk.csv
 
 ## Demonstration Scenarios
 
-### Baseline healthy condition
+### Baseline Healthy Condition
 
 ```text
 DO          = 5.0 mg/L
@@ -345,7 +303,7 @@ Temperature = 28 °C
 Salinity    = 20 ppt
 ```
 
-### High-stress simulation
+### High-Stress Simulation
 
 ```text
 DO          = 2.0 mg/L
@@ -410,11 +368,11 @@ See [`LICENSE`](LICENSE) for details.
 <div align="center">
 
 <a href="https://forecasting-mortality-prediction-for-penaeus-vannamei.streamlit.app/">
-  <img src="https://img.shields.io/badge/OPEN%20LIVE%20APPLICATION-0B7285?style=for-the-badge&logo=streamlit&logoColor=white" alt="Open live application">
+  <img src="https://img.shields.io/badge/OPEN%20LIVE%20APPLICATION-0B7285?style=for-the-badge&logo=streamlit&logoColor=white" alt="Open Live Application">
 </a>
 
 <br><br>
 
-<sub>Research prototype for water-quality detection and forecasting in Penaeus vannamei aquaculture.</sub>
+<sub>Research prototype for water-quality detection and forecasting in <i>Penaeus vannamei</i> aquaculture.</sub>
 
 </div>
