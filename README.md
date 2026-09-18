@@ -276,14 +276,92 @@ For reproducibility, keep the Python and model-library versions compatible with 
 
 ---
 
-## Forecast Evaluation
+## Model Evaluation and Performance
 
-The ARIMA workflow evaluates forecasts using:
+The models are evaluated using metrics appropriate to their respective machine-learning tasks.
 
-- **MAE** — Mean Absolute Error
-- **RMSE** — Root Mean Squared Error
+### Random Forest — Risk-Condition Classification
 
-Generated evaluation files include:
+The Random Forest model is evaluated as a **multi-class classification model** for environmental risk conditions. The primary classification metrics are:
+
+| Metric | Purpose |
+|---|---|
+| **Accuracy** | Proportion of correctly classified risk conditions |
+| **Precision** | Proportion of predicted risk classes that are correct |
+| **Recall** | Proportion of actual risk classes correctly identified |
+| **F1-Score** | Harmonic mean of precision and recall |
+
+#### Random Forest Performance
+
+> **Important:** Insert the final values from the executed notebook before using these figures in a research paper or presentation. The README does not assume performance values that are not explicitly reported by the model evaluation.
+
+| Metric | Result |
+|---|---:|
+| Accuracy | **85.86%** |
+| Balanced Accuracy | **81.87%** |
+| Macro Precision | **89.75%** |
+| Macro Recall | **81.87%** |
+| Macro F1-Score | **84.52%** |
+
+The test-set classification report also produced the following class-level results:
+
+| Risk Class | Precision | Recall | F1-Score | Support |
+|---|---:|---:|---:|---:|
+| Low | **94%** | **71%** | **81%** | 65 |
+| Moderate | **78%** | **97%** | **86%** | 273 |
+| High | **97%** | **78%** | **87%** | 256 |
+
+The classification results should be interpreted within the scope of the available dataset and labeling methodology. Because the dataset does not contain verified observed shrimp mortality/event labels, these metrics describe the model's ability to classify the defined **environmental risk-condition categories**, rather than validated shrimp mortality prediction.
+
+### ARIMA — Water-Quality Forecasting
+
+ARIMA models are evaluated as **time-series forecasting models**. Unlike classification models, ARIMA does not use classification accuracy as its primary performance measure. Instead, forecast error is evaluated using:
+
+| Metric | Interpretation |
+|---|---|
+| **MAE** | Average absolute difference between observed and forecast values |
+| **RMSE** | Penalizes larger forecast errors more strongly than MAE |
+
+#### ARIMA Performance by Parameter
+
+| Water-Quality Parameter | ARIMA Order | MAE | RMSE |
+|---|---|---:|---:|
+| Dissolved Oxygen (DO) | (0, 0, 2) | **1.021277** | **1.365037** |
+| pH | (0, 1, 2) | **0.356829** | **0.433247** |
+| Temperature | (1, 1, 2) | **3.821804** | **4.231466** |
+| Salinity | (1, 1, 2) | **13.444609** | **15.698670** |
+
+Lower MAE and RMSE values indicate smaller forecasting errors. Because the four water-quality parameters are measured on different scales, their error values should primarily be interpreted **within each parameter**, rather than directly comparing raw MAE/RMSE values across parameters.
+
+### Evaluation Summary
+
+```text
+                    MODEL EVALUATION
+                           |
+             +-------------+-------------+
+             |                           |
+             v                           v
+      RANDOM FOREST                    ARIMA
+      Classification                 Forecasting
+             |                           |
+     +-------+-------+             +-----+-----+
+     |       |       |             |           |
+     v       v       v             v           v
+ Accuracy Precision Recall        MAE         RMSE
+             |       |
+             +---+---+
+                 |
+                 v
+             F1-Score
+```
+
+The Random Forest model is therefore reported using **classification metrics**, while the ARIMA models are reported using **forecast-error metrics**. This distinction avoids treating forecasting error as classification accuracy and provides a more appropriate evaluation framework for the two model types.
+
+---
+
+## Forecast Evaluation Outputs
+
+The detailed ARIMA validation results are exported to:
 
 ```text
 outputs/arima_validation_metrics.csv
